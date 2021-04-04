@@ -183,11 +183,11 @@ class ProfitMax {
 
   public static void main(String args[]){
 
-    setMarketPrices(args[1]);
+    setMarketPrices(args[0]);
     //System.out.println(marketPrices);
 
     try {
-      Scanner scanner = new Scanner(new File(args[2]));
+      Scanner scanner = new Scanner(new File(args[1]));
       ArrayList<String> lines = new ArrayList<String>();
       while (scanner.hasNextLine())
         lines.add(scanner.nextLine());
